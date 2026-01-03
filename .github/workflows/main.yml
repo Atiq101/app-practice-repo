@@ -1,0 +1,13 @@
+name: Application Build
+
+on: 
+  workflow_dispatch:
+
+jobs:
+  Build:
+    runs-on: hotspot
+    name: setup nodejs * application build
+    steps:
+    - name: setup Nodejs
+      run: echo "Hello Hello."
+
