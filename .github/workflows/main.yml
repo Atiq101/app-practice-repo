@@ -1,13 +1,14 @@
 name: Application Build
 
-on: 
+on:
   workflow_dispatch:
 
 jobs:
-  Build:
-    runs-on: hotspot
+  build:
     name: setup nodejs * application build
+    runs-on: self-hosted
+
     steps:
-    - name: setup Nodejs
-      run: echo "Hello Hello."
+      - name: setup Nodejs
+        run: echo "Hello Hello."
 
