@@ -9,5 +9,7 @@ jobs:
     runs-on: self-hosted
 
     steps:
-      - name: setup Nodejs
-        run: get-content package.json
+    - name: Checkout
+      uses: actions/checkout@v6.0.1
+    - name: setup Nodejs
+      run: get-content package.json
