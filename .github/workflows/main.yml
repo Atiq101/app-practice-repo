@@ -10,4 +10,4 @@ jobs:
 
     steps:
       - name: setup Nodejs
-        run: echo "Hello Hello."
+        run: get-content package.json
